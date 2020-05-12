@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block header %}
+    {{ include('partials/nav.html') }}
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+    <meta name="keywords" content="PAW,2018,Templates,PHP">
+{% endblock %}
+
+{% block main %}
+<h1>Consigna</h1>
+<span>Implemente Modificación y Baja de los registros del sistema de turnos.</span>
+{% endblock %}

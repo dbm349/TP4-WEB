@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Turnos{% endblock %}
+
+{% block header %}
+    {{ include('partials/nav.html') }}
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+    <meta name="keywords" content="PAW,2018,Templates,PHP">
+{% endblock %}
+
+{% block main %}
+    <h2>Turnos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Fecha del turno</th>
+                <th scope="col">Hora del turno</th>
+                <th scope="col">Nombre del paciente</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Email</th>
+                <th scope="col">Turno completo</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr> 
+        </thead>
+
+        <tbody>
+            {% for turno in turnos %}
+                <tr>
+                    <td>{{turno.fechaturno|date ("d/m/Y")}}</td>     
+                    <td>{{turno.horaturno|date('H:i')}}</td>
+                    <td>{{turno.nombre}}</td>
+                    <td>{{turno.tel}}</td>
+                    <td>{{turno.email}}</td>
+                    <td><a href="/turnos/completo?id={{turno.id}}">Ver</a></td>
+                    <td><a href="/turnos/update?id={{turno.id}}">Modificar Turno</a></td>
+                    <td><a href="/turnos/delete?id={{turno.id}}">Eliminar</a></td>
+                </tr>
+            {% else %}
+                <span>No hay turnos registrados</span>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

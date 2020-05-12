@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %} - Programacion en Ambiente Web - 2020</title>
+        <link rel="stylesheet" href="/public/style.css">
+    {% endblock %}
+</head>
+<body>
+    <header>{% block header %}{% endblock %}</header>
+    <main>{% block main %}{% endblock %}</main>
+    <footer>{% block footer %}{% endblock %}</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* color verde 0,150,69 
+color azul 0, 110, 199*/
+
+body {
+    background: white;
+}
+
+header {
+
+    font-family: "Arial Narrow", Arial, sans-serif;   
+}
+
+h1{
+    text-align: center;
+}
+
+.Menu img{
+    margin: auto;
+    width: 50%;
+    display: block;
+}
+
+#listaMenu{
+    
+    display: flex;
+    justify-content: left;
+    background-color: rgb(0,150,69);
+    border-style: solid none none none;
+    border-width: 8px;
+    border-color: rgb(0, 110, 199);
+    padding: 2%;
+}
+
+#listaMenu a{
+    color: white;
+}
+
+#listaMenu li{
+    display: inline;
+    margin-right: 5%;
+}

@@ -1,0 +1,124 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    background: rgb(70,70,70);
+    color: white;
+    text-align: center;
+    width: 75%;
+    height: 10%;
+    float: left;
+    margin-top: 1%;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*----------------experiencia laboral-----------------*/
+
+.experiencia1{
+    width: 75%;
+    height: 10%;
+
+   /* border: 1px solid green;*/
+    
+}
+
+.experiencia1 dl{
+    display: table-row;
+
+}
+
+.experiencia1 dt{
+    display: table-cell;
+
+}
+
+.experiencia1 img{
+    display: table-cell;
+
+}
+
+.experiencia1 dd{
+    display: table-cell;
+    width: 77%;
+  
+
+
+}
+
+/*----------------Educacion-----------------*/
+
+.education{
+    width: 75%;
+    height: 10%;
+    float: left;
+    border: 1px solid green;
+}
+
+/*----------------experiencia didactica-----------------*/
+
+.experiencia2{
+    width: 75%;
+    height: 10%;
+    float: left;
+    border: 1px solid red;
+}
+
+/*----------------Contacto-----------------*/
+
+.contacto {
+    background: rgb(197, 149, 103);
+    width: 22%;
+    height: 100%;
+    float: right;
+    border: 1px solid green;
+    margin-top: 1%;
+}
+
+.contacto img{
+    width: 55%;
+    border-radius: 50%;
+    float: center;
+    height: 55%;
+    margin-bottom: 40%;
+}
+
+.contacto address{
+    list-style-type: none;
+}
+
+.contacto dt{
+    text-align: left;
+}
+
+.contacto dd{
+    text-align: right;
+}
+
+.informacion {
+    margin-bottom: 128px;
+    margin-left: 10px;
+}
+
+.lenguajes {
+    margin-bottom: 128px;
+    margin-left: 10px;
+}
+
+.habilidades {
+    margin-bottom: 128px;
+    margin-left: 10px;
+}
+
+/*----------------Small-----------------*/
+
+small {
+    float: left;
+    width: 75%;
+    border: 1px solid black;
+}
+

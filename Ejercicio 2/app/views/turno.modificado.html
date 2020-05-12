@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}Turno Reservado{% endblock %}
+
+{% block header %}
+    {{ include('partials/nav.html') }}
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+    <meta name="keywords" content="PAW,2018,Templates,PHP">
+{% endblock %}
+
+{% block main %}
+<h2>Turno modificado: </h2>
+<div>
+    <section>
+        <div>
+            <label>
+            <h3>Nombre:</h3>
+                {{turnonuevo.nombre}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Tel: </h3>
+                {{turnonuevo.tel}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Email: </h3>
+                {{turnonuevo.email}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Edad: </h3>
+                {{turnonuevo.edad}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Talla de calzado: </h3>
+                {{turnonuevo.talla}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Altura: </h3>
+                {{turnonuevo.altura}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Fecha de Nacimiento: </h3>
+                {{turnonuevo.nacimiento}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Color de pelo: </h3>
+                {{turnonuevo.cpelo}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Fecha del turno: </h3>
+                {{turnonuevo.fechaturno|date ("d/m/Y")}}
+            </label>
+        </div>
+        <div>
+            <label>
+                <h3> Hora del turno: </h3>
+                {{turnonuevo.horaturno|date('H:i')}}
+            </label>
+        </div>
+        {% if diagnosticoImg is not empty %}
+            <div>
+                <label>
+                    <h3>Diagnostico: </h3>
+                    <img src="data:image/{{turno.extension}};base64,{{diagnosticoImg}}">
+                </label>
+            </div>
+            {% else %}
+            <div>
+                <label>
+                    <h3>Diagnostico: </h3>
+                    <p>Sin Diagnostico</p>
+                </label>
+            </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}
