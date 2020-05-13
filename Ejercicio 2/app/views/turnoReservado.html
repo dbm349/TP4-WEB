@@ -13,83 +13,69 @@
 
 {% block main %}
 <h2>Turno reservado: </h2>
-<div>
-    <section>
-        <div>
-            <label>
-            <h3>Nombre:</h3>
-                {{turnonuevo.nombre}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Tel: </h3>
-                {{turnonuevo.tel}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Email: </h3>
-                {{turnonuevo.email}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Edad: </h3>
-                {{turnonuevo.edad}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Talla de calzado: </h3>
-                {{turnonuevo.talla}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Altura: </h3>
-                {{turnonuevo.altura}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Fecha de Nacimiento: </h3>
-                {{turnonuevo.nacimiento}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Color de pelo: </h3>
-                {{turnonuevo.cpelo}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Fecha del turno: </h3>
-                {{turnonuevo.fechaturno|date ("d/m/Y")}}
-            </label>
-        </div>
-        <div>
-            <label>
-                <h3> Hora del turno: </h3>
-                {{turnonuevo.horaturno|date('H:i')}}
-            </label>
-        </div>
-        {% if diagnosticoImg is not empty %}
-            <div>
-                <label>
-                    <h3>Diagnostico: </h3>
-                    <img src="data:image/{{turno.extension}};base64,{{diagnosticoImg}}">
-                </label>
-            </div>
-            {% else %}
-            <div>
-                <label>
-                    <h3>Diagnostico: </h3>
-                    <p>Sin Diagnostico</p>
-                </label>
-            </div>
-            {% endif %}
-    </section>
-</div>
+
+<section>
+    <label>
+        <h3>Nombre:</h3>
+        {{turnonuevo.nombre}}
+    </label>
+
+    <label>
+        <h3> Tel: </h3>
+        {{turnonuevo.tel}}
+    </label>
+
+    <label>
+        <h3> Email: </h3>
+        {{turnonuevo.email}}
+    </label>
+
+    <label>
+        <h3> Edad: </h3>
+        {{turnonuevo.edad}}
+    </label>
+
+    <label>
+        <h3> Talla de calzado: </h3>
+        {{turnonuevo.talla}}
+    </label>
+
+    <label>
+        <h3> Altura: </h3>
+        {{turnonuevo.altura}}
+    </label>
+
+    <label>
+        <h3> Fecha de Nacimiento: </h3>
+        {{turnonuevo.nacimiento}}
+    </label>
+
+    <label>
+        <h3> Color de pelo: </h3>
+        {{turnonuevo.cpelo}}
+    </label>
+
+    <label>
+        <h3> Fecha del turno: </h3>
+        {{turnonuevo.fechaturno|date ("d/m/Y")}}
+    </label>
+
+    <label>
+        <h3> Hora del turno: </h3>
+        {{turnonuevo.horaturno|date('H:i')}}
+    </label>
+
+    {% if diagnosticoImg is not empty %}
+        <label>
+            <h3>Diagnostico: </h3>
+            <img src="data:image/{{turno.extension}};base64,{{diagnosticoImg}}">
+        </label>
+    {% else %}
+        <label>
+            <h3>Diagnostico: </h3>
+            <p>Sin Diagnostico</p>
+        </label>
+    {% endif %}
+    
+</section>
 {% endblock %}

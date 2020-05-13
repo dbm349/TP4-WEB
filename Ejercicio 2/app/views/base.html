@@ -10,6 +10,13 @@
 <body>
     <header>{% block header %}{% endblock %}</header>
     <main>{% block main %}{% endblock %}</main>
-    <footer>{% block footer %}{% endblock %}</footer>
+    <footer id="pie">
+        {% block footer %}           
+            <span>Av. 16 de Septiembre No. 1002 A</span> 
+            <span>Col. Ricardo Flores Magón. Veracruz, Ver. C.P. 91900</span>
+            <span>Tel. (229) 932 2227</span>
+            <span>veramedica@hotmail.com</span>  
+        {% endblock %}
+    </footer>
 </body>
 </html>
