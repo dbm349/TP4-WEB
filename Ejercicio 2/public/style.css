@@ -26,7 +26,7 @@ h2{
 
 #Menu img{
     margin: auto;
-    width: 50%;
+    width: 30%;
     display: block;
 }
 
@@ -56,6 +56,10 @@ h2{
 }
 
 /*----------------Home----------------*/
+
+#Home{
+    padding-bottom: 10%;
+}
 
 /*----------------Consigna----------------*/
 
@@ -96,16 +100,55 @@ h2{
 
 /*----------------Turno Nuevo----------------*/
 
-form{
-    margin: 2%;
-}
-
 fieldset{
     border-radius:10px;
 }
 
-.formulario article{
+.formulario{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.campos{
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: 2%
+}
+
+.campos article{
+    margin: 2%
+}
+
+.campos input, select{
+    width: 50%;
+    float: right;
+}
+
+.campos label{
+    margin-right: 1%;
+    font-weight: bold;
+}
+
+.campos img{
+    width: 100%;
+}
+
+.fondo{
+    margin-left: 3%;
+    font-weight: bold;
+}
+
+
+.fondo article{
+    margin-bottom: 2%;
+}
+
+.botones input{
+    width: 15%;
+    background-color: rgb(0, 110, 199);
+    color: white;
+    margin-left: 23%;
 }
 
 /*----------------Footer----------------*/

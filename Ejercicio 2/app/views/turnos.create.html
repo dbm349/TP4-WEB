@@ -14,93 +14,93 @@
 
 {% block main %}
     <h2>Solicitar Turno</h2>
-    <section class="formulario">
-        <form action="/turnos/validate" method="POST" enctype="multipart/form-data">
+        <form class="formulario" action="/turnos/validate" method="POST" enctype="multipart/form-data">
             <fieldset>
-                <legend>Datos Personales</legend>
-
-                <article>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre" maxlength="20" pattern="[A-Za-zÀ-ž\s]{3,20}" placeholder="Ingrese su nombre" value="{{ nombre }}" required>
-                    *
-                </article>
-
-                <article>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su email" value="{{ email }}" required>
-                    *
-                </article>
-
-                <article>
-                    <label for="tel">Teléfono: </label>
-                    <input type="number" id="tel" name="tel" pattern=[0-9\+][0-9]{13} placeholder="Ingrese su teléfono" value="{{ tel }}" required>
-                    *
-                </article>
-
-                <article>
-                    <label for="edad">Edad: </label>
-                    <input type="number" id="edad" name="edad"  min="1" max="105" placeholder="Rango válido [1-105]" value="{{ edad }}" >
-                </article>
-
-                <article>
-                    <label for="talla">Talla de Calzado: </label>
-                    <input type="number" id="talla" name="talla" min="20" max="45" placeholder="Rango válido [20-45]" value="{{ talla }}">
+                <section class="campos">
+                    <article>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" maxlength="20" pattern="[A-Za-zÀ-ž\s]{3,20}" placeholder="Ingrese su nombre" value="{{ nombre }}" required>
+                        *
                     </article>
 
-                <article>
-                    <label for="altura">Altura: </label>
-                    0.5
-                    <input type="range" id="altura" name="altura" min="0.5" max="3" step="0.1" value="{{ altura }}" >
-                    3
-                </article>
+                    <article>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email" value="{{ email }}" required>
+                        *
+                    </article>
 
-                <article>
-                    <label for="nacimiento">Fecha de Nacimiento: </label>
-                    <input type="date" id="nacimiento" name="nacimiento" value="{{ nacimiento }}" required>
-                    *
-                </article>
+                    <article>
+                        <label for="tel">Teléfono: </label>
+                        <input type="number" id="tel" name="tel" pattern=[0-9\+][0-9]{13} placeholder="Ingrese su teléfono" value="{{ tel }}" required>
+                        *
+                    </article>
 
-                <article>
-                    <label for="cpelo">Color de Pelo: </label>
-                        <select id="cpelo" name="cpelo">
-                            <option value="Castaño">Castaño</option>
-                            <option value="Rubio">Rubio</option>
-                            <option value="Pelirrojo">Pelirrojo</option>
-                            <option value="Negro">Negro</option>
-                        </select>
-                </article>
+                    <article>
+                        <label for="edad">Edad: </label>
+                        <input type="number" id="edad" name="edad"  min="1" max="105" placeholder="Rango válido [1-105]" value="{{ edad }}" >
+                    </article>
 
-                <article>
-                    <label for="fechaturno">Fecha de Turno: </label>
-                    <input type="date" id="fechaturno" name="fechaturno" min="2020-01-01" value="{{ fechaturno }}" required>
-                    *
-                </article>
+                    <article>
+                        <label for="talla">Talla de Calzado: </label>
+                        <input type="number" id="talla" name="talla" min="20" max="45" placeholder="Rango válido [20-45]" value="{{ talla }}">
+                        </article>
 
-                <article>
-                    <label>Horario del Turno: </label>
-                    <input type="time" id="horaturno" name="horaturno" min="08:00:00" max="17:00:00" value="08:00:00" step="900" value="{{ horaturno }}" required>
-                    *
-                </article>
+                    <article>
+                        <label for="altura">Altura (0.5 mts - 3 mts): </label>
+                        <input type="range" id="altura" name="altura" min="0.5" max="3" step="0.1" value="{{ altura }}" >
+                    </article>
 
-                <article>
-                    <label>Diagnostico</label>
-                    <input type="file" name="diagnostico" accept=".jpg,.png">
-                </article>
+                    <article>
+                        <label for="nacimiento">Fecha de Nacimiento: </label>
+                        <input type="date" id="nacimiento" name="nacimiento" value="{{ nacimiento }}" required>
+                        *
+                    </article>
 
-                <article>
-                    * <small>Este dato es obligatorio</small>
-                </article>
+                    <article>
+                        <label for="cpelo">Color de Pelo: </label>
+                            <select id="cpelo" name="cpelo">
+                                <option value="Castaño">Castaño</option>
+                                <option value="Rubio">Rubio</option>
+                                <option value="Pelirrojo">Pelirrojo</option>
+                                <option value="Negro">Negro</option>
+                            </select>
+                    </article>
 
-                <article>
-                    <input type="reset" name="limpiar" value="Limpiar">
-                    <input type="submit" name="submit" value="Enviar">
-                </article>
+                    <article>
+                        <label for="fechaturno">Fecha de Turno: </label>
+                        <input type="date" id="fechaturno" name="fechaturno" min="2020-01-01" value="{{ fechaturno }}" required>
+                        *
+                    </article>
+
+                    <article>
+                        <label>Horario del Turno: </label>
+                        <input type="time" id="horaturno" name="horaturno" min="08:00:00" max="17:00:00" value="08:00:00" step="900" value="{{ horaturno }}" required>
+                        *
+                    </article>
+
+                    <article class="diagnosticoimg">
+                        <label>Diagnostico</label>
+                        <input type="file" name="diagnostico" accept=".jpg,.png">
+                    </article>
+
+                </section>
+
+                <section class="fondo">
+
+                    <article>
+                        * <small>Este dato es obligatorio</small>
+                    </article>
+
+                    <article class="botones">
+                        <input type="reset" name="limpiar" value="Limpiar">
+                        <input type="submit" name="submit" value="Enviar">
+                    </article>
+                </section> 
             </fieldset>
         </form>
-    </section>
 
     {% if errores is not empty %}
-        <section>
+        <section class="Errores">
             <p>
                 Campos Erroneos:
             </p>
