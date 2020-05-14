@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Turno Reservado{% endblock %}
+{% block title %}turnonuevo Reservado{% endblock %}
 
 {% block header %}
     {{ include('partials/nav.html') }}
@@ -12,70 +12,91 @@
 {% endblock %}
 
 {% block main %}
-<h2>Turno reservado: </h2>
+<section class="ficha">
+    <h2>Turno Modificado: </h2>
 
-<section>
-    <label>
-        <h3>Nombre:</h3>
-        {{turnonuevo.nombre}}
-    </label>
+    <section class="fichaPaciente">  
+        <label>
+            <h3>Nombre</h3>
+            <div class="info">
+                {{turnonuevo.nombre}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Tel: </h3>
-        {{turnonuevo.tel}}
-    </label>
+        <label>
+            <h3>Tel</h3>
+            <div class="info">
+                {{turnonuevo.tel}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Email: </h3>
-        {{turnonuevo.email}}
-    </label>
+        <label>
+            <h3>Email</h3>
+            <div class="info">
+                {{turnonuevo.email}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Edad: </h3>
-        {{turnonuevo.edad}}
-    </label>
+        <label>  
+            <h3>Edad</h3>
+            <div class="info">
+                {{turnonuevo.edad}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Talla de calzado: </h3>
-        {{turnonuevo.talla}}
-    </label>
+        <label>
+            <h3>Talla de calzado</h3>
+            <div class="info">
+                {{turnonuevo.talla}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Altura: </h3>
-        {{turnonuevo.altura}}
-    </label>
+        <label>
+            <h3>Altura</h3>
+            <div class="info">
+                {{turnonuevo.altura}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Fecha de Nacimiento: </h3>
-        {{turnonuevo.nacimiento}}
-    </label>
+        <label>
+            <h3>Fecha de Nacimiento</h3>
+            <div class="info">
+                {{turnonuevo.nacimiento|date ("d/m/Y")}}
+            </div>
+        </label>
 
-    <label>
-        <h3> Color de pelo: </h3>
-        {{turnonuevo.cpelo}}
-    </label>
+        <label>
+            <h3>Color de pelo</h3>
+            <div class="info">
+                {{turnonuevo.cpelo}}
+            </div>
+        </label>
+    </section>
 
-    <label>
-        <h3> Fecha del turno: </h3>
-        {{turnonuevo.fechaturno|date ("d/m/Y")}}
-    </label>
+    <section class="fichaTurno">
+        <label>
+            <h3>Fecha del turno</h3>
+            {{turnonuevo.fechaturno|date ("d/m/Y")}}
+        </label>
 
-    <label>
-        <h3> Hora del turno: </h3>
-        {{turnonuevo.horaturno|date('H:i')}}
-    </label>
+        <label>
+            <h3>Hora del turno</h3>
+            {{turnonuevo.horaturno|date('H:i')}}
+        </label>
+    </section>
 
+    <section class="diag">
     {% if diagnosticoImg is not empty %}
         <label>
-            <h3>Diagnostico: </h3>
-            <img src="data:image/{{turno.extension}};base64,{{diagnosticoImg}}">
+            <h3>Diagnostico</h3>
+            <img src="data:image/{{turnonuevo.extension}};base64,{{diagnosticoImg}}">
         </label>
     {% else %}
-        <label>
-            <h3>Diagnostico: </h3>
+        <label> 
+            <h3>Diagnostico</h3>
             <p>Sin Diagnostico</p>
         </label>
     {% endif %}
-    
+    </section>
 </section>
 {% endblock %}

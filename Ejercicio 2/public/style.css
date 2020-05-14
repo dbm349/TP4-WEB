@@ -65,14 +65,16 @@ h2{
 
 /*----------------Contacto----------------*/
 
-.contacto{
-    width: 100%;
-    margin: auto;
+.contacto dl {
+    text-align: justify;  
 }
 
-.contacto span{
-    display: block;
-    text-align: left;
+.contacto dt {
+    font-weight: bold;
+}
+
+.contacto dd {
+
 }
 
 /*----------------Turnos----------------*/
@@ -120,9 +122,16 @@ fieldset{
     margin: 2%
 }
 
+.campos select{
+    width: 53%;
+}
+
 .campos input, select{
     width: 50%;
     float: right;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding: 1%;
+    border-radius:5px;
 }
 
 .campos label{
@@ -149,6 +158,40 @@ fieldset{
     background-color: rgb(0, 110, 199);
     color: white;
     margin-left: 23%;
+    border-radius: 10px;
+}
+
+/*----------------Ficha Turno---------------*/
+
+.info{
+    text-align:center;
+    align-items: center;
+    display: inline-block;
+}
+
+.fichaPaciente{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+    text-align:center;
+}
+
+
+.fichaTurno{
+    display: flex;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+.diag{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3%;
+    text-align:center;
+}
+
+.diag img{
+    width: 50%;
 }
 
 /*----------------Footer----------------*/
@@ -166,4 +209,3 @@ fieldset{
     display: block;
     text-align: center;
 }
-
