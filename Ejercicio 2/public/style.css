@@ -209,3 +209,22 @@ fieldset{
     display: block;
     text-align: center;
 }
+
+/*----------------Botones Responsive----------------*/
+
+@media all and (max-width: 600px) {
+    .diagnosticoimg input{
+        width: 100%;
+        float:none;
+    }
+
+    .botones input{
+        width: 20%;
+        float:none;
+
+    }
+
+    .campos input{
+        width: 100%;
+    } 
+}
