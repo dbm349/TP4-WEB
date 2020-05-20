@@ -1,0 +1,23 @@
+@font-face {
+font-family: 'swiss-721-bold-condensed-bt';
+font-style: normal;
+font-weight: normal;
+src: local('swiss-721-bold-condensed-bt'), url('swiss-721-bold-condensed-bt.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Swiss721CondensedBT';
+font-style: normal;
+font-weight: normal;
+src: local('Swiss721CondensedBT'), url('Swiss721CondensedBT.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Swiss721CondensedItalicBT';
+font-style: normal;
+font-weight: normal;
+src: local('Swiss721CondensedItalicBT'), url('Swiss721CondensedItalicBT.woff') format('woff');
+}
+    
