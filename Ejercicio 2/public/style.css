@@ -79,19 +79,26 @@ h2{
 
 .contacto p{
     font-size: large;
+    text-align: center;
 }
 
-.contacto dl {
-    text-align: justify;  
+.contacto dl  {
+    margin: 0px; padding: 0px;
+    overflow: auto;
+    margin-bottom: 10%;
 }
 
-.contacto dt {
-    font-weight: bold;
-    font-size: large;
+.contacto dt  {
+   display: inline-block;
+   width: 45%;
+   text-align: right;
+   font-size: large;
 }
 
 .contacto dd {
-    font-size: small;
+   width: 45%;
+   display: inline-block;
+   font-size: medium;
 }
 
 /*----------------Turnos----------------*/
@@ -221,6 +228,7 @@ footer{
     border-color: rgb(0, 110, 199);
     padding: 1%;
     clear: both;
+    font-size: small;
 }
 
 #pie span{
