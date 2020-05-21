@@ -1,0 +1,418 @@
+body{
+	width: 75%;
+	padding-left: 6%;
+}
+
+
+
+h1 {
+	text-align: center;
+	background-color: #333333;
+    color: #ffffff;
+
+    
+}
+
+.perfil{
+    width: 65%;	
+	float:left;
+
+
+}
+
+h3,h2{
+    text-align: center;
+}
+
+
+.imagenes{	
+	width: 7%;	
+	float: left;
+	padding-left:3%;
+	padding-right:3%;
+
+}
+
+
+
+.fechas{
+    width: 20%;	
+	float: left;
+	
+}
+
+
+.texto{
+    width: 60%;	
+	float:left;
+	margin-top:0px;
+}
+
+
+.texto2{
+    width: 75%;	
+	float:left;
+	margin-top:0px;
+}
+
+
+
+.texto3{
+    width: 75%;	
+	float:left;
+	margin-top:0px;
+}
+
+
+.DatosP{
+    width: 25%;	
+	float: right;
+	background:rgb(245, 208, 172);
+	padding: 0 2vw;
+	margin-left: 1vw;
+	margin-top: 2%;
+	padding-bottom: 1%;
+}
+	
+
+dl.cast-list{
+	font-family: Calibri;
+	width: 100%;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+dl.cast-list2{
+	font-family: Calibri;	
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+dl.cast-list dt{
+	display:flex;
+	flex: 1 1 auto;
+	margin: 0px 0px 0px 0px;
+}
+
+dl.cast-list dd{
+	flex: 0 1 auto;
+	margin: 0px 0px 0px 0px;
+}
+
+
+dl.cast-list dt:after{
+	border-bottom: 2px dotted #000000;
+	content: "";
+	flex: 1 1 auto;
+	margin: 0px 12px 5px 12px;
+}
+
+
+dl.cast-list div{
+	display: flex;
+	margin: 5px 0px 5px 0px;
+}
+
+span{
+	letter-spacing: 2vw;
+}
+
+
+section.DatosP img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  width: 70%;
+  height: 50%;
+  border-radius: 50%;
+	
+}
+
+
+#iconoI{
+  background-image: url(imagenes/iconoI.jpg);
+   background-size: 20% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 15px;
+  padding-top: 80px;
+}
+
+#compu{
+  background-image: url(imagenes/compu.jpg);
+  background-size: 20% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 30px;
+  padding-top: 80px;
+}
+
+
+#gorro{
+  background-image: url(imagenes/gorro.jpg);
+  background-size: 50px 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 30px;
+  padding-top: 60px;
+}
+
+#globos{
+  background-image: url(imagenes/globos.jpg);
+   background-size: 20% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 30px;
+  padding-top: 80px;
+}
+
+#regla{
+  background-image: url(imagenes/regla.jpg);
+  background-size: 10% 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 6%;
+  padding-top: 10%;
+}
+
+
+#gorro{
+    background-image: url('imagenes/gorro.jpg');
+	background-size: 15% 65%;
+	background-repeat: no-repeat;
+    background-position: center margin-bottom 15px;
+    margin-top: 30%;
+	padding-top: 10%;
+}
+
+
+#pizarra{
+    background-image: url('imagenes/pizarra.jpg');
+	background-size: 15% 65%;
+	background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 0%;
+	padding-top: 10%;
+}
+
+
+#punto1{
+    background-image: url('imagenes/1punto.jpg');
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+}
+
+
+#puntos2{
+    background-image: url('imagenes/2puntos.jpg');
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+}
+
+#puntos3{
+    background-image: url('imagenes/3puntos.jpg');
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+
+#puntos4{
+    background-image: url('imagenes/4puntos.jpg');
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+#puntos5{
+    background-image: url('imagenes/5puntos.jpg');
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+
+img{
+	filter: grayscale(100%);
+}
+
+div.edu time{
+	display:flex;
+	flex: 1 0 auto;
+	margin: 0px 4px;
+	
+}
+
+
+div.edu p{
+	flex: 0 1 auto;
+	margin: 0px 0px 2px 7px;
+}
+
+div.edu{
+	display: flex;
+	margin: 5px 0px 0px 0px;
+	
+}
+
+small{
+	padding-top: 50%;
+}
+
+/*Para pantalla mas chicas*/
+
+@media screen and (max-width: 1026px){
+
+   
+#gorro{
+  background-image: url(imagenes/gorro.jpg);
+  background-size: 0px 0px;
+  background-repeat: no-repeat;
+  background-position: center padding-bottom 3px;
+  margin-top: 30px;
+  padding-top: 60px;
+ 
+}
+
+
+
+#regla{
+  background-image: url(imagenes/regla.jpg);
+  background-size: 0% 0%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 6%;
+  padding-top: 10%;
+}
+
+
+
+#pizarra{
+    background-image: url('imagenes/pizarra.jpg');
+	background-size: 0% 0%;
+	background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 0%;
+	padding-top: 10%;
+}
+
+
+
+#punto1{
+    background-image: url('imagenes/1punto.jpg');
+	background-size: 50% 80%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+}
+
+
+#puntos2{
+    background-image: url('imagenes/2puntos.jpg');
+	background-size: 50% 80%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+}
+
+#puntos3{
+    background-image: url('imagenes/3puntos.jpg');
+	background-size: 50% 80%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+
+#puntos4{
+    background-image: url('imagenes/4puntos.jpg');
+	background-size: 50% 80%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+#puntos5{
+    background-image: url('imagenes/5puntos.jpg');
+	background-size: 50% 80%;
+	background-repeat: no-repeat;
+    background-position: center right;
+    padding-left: 0%;
+    padding-bottom: 3%;
+
+}
+
+
+.DatosP{
+    width: 25%;	
+	float: right;
+	background:rgb(245, 208, 172);
+	padding: 0 2vw;
+	margin-left: 0vw;
+	margin-top: 2%;
+	padding-bottom: 1%;
+}
+	
+body{
+	width: 100%;
+	padding-left: 0%;
+}
+
+
+dl.cast-list{
+	font-family: Calibri;
+	width: 100%;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+dl.cast-list2{
+	font-family: Calibri;	
+	font-size: 10px;
+	font-weight: bold;
+}
+
+span{
+	letter-spacing: 1vw;
+}
+
+
+.perfil{
+    width: 65%;	
+	float:left;
+
+}
+
+div.edu p {
+    flex: 0 1 auto;
+    margin: 0px 0px 2px 7px;
+}
+
+address, h3 {
+	font-size: 65%;
+
+}
+
